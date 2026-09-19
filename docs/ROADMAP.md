@@ -1,92 +1,71 @@
 # Roadmap
 
-## Phase 0 — Foundation
+## Phase 1 — Foundation
 
-- [ ] Xcode project;
-- [ ] SwiftUI shell;
-- [ ] C++26 engine target;
-- [ ] Swift/C++ boundary;
-- [ ] SQLite layer;
-- [ ] project configuration;
-- [ ] unit test infrastructure;
-- [ ] CI.
+Status: in progress.
 
-## Phase 1 — Data Lab
+Completed:
 
-- [ ] Person;
-- [ ] Observation;
-- [ ] Event;
-- [ ] Habit;
-- [ ] Achievement;
-- [ ] Dataset;
-- [ ] CSV import;
-- [ ] JSON import/export;
-- [ ] data validation;
-- [ ] missing-data handling.
+- repository documentation;
+- domain identifiers and project model;
+- SwiftUI application shell;
+- C++26 engine skeleton;
+- C ABI bridge;
+- CMake engine build definition;
+- SQLite store;
+- schema migration v1;
+- project repository/service;
+- local application bootstrap.
 
-## Phase 2 — Statistics
+Remaining:
 
-- [ ] descriptive statistics;
-- [ ] distributions;
-- [ ] correlations;
-- [ ] group comparison;
-- [ ] regression;
-- [ ] confidence intervals;
-- [ ] effect sizes;
-- [ ] statistical diagnostics.
+- Xcode target configuration;
+- automated Swift/C++/bridge tests;
+- real Dataset domain and immutable dataset versions;
+- analysis request/result persistence.
 
-## Phase 3 — Visualization
+## Phase 2 — Data Lab
 
-- [ ] scatter plot;
-- [ ] line chart;
-- [ ] histogram;
-- [ ] box plot;
-- [ ] heatmap;
-- [ ] correlation matrix;
-- [ ] timeline;
-- [ ] trajectory visualization.
+- CSV/JSON import;
+- schema inference;
+- variable dictionary;
+- validation and missing-data diagnostics;
+- dataset versioning;
+- provenance;
+- immutable committed dataset snapshots.
 
-## Phase 4 — Trajectory Lab
+## Phase 3 — Statistical Engine
 
-- [ ] similarity;
-- [ ] clustering;
-- [ ] historical analogues;
-- [ ] temporal pattern analysis;
-- [ ] 5-year scenarios;
-- [ ] 10-year scenarios;
-- [ ] 15-year scenarios;
-- [ ] uncertainty bands.
+- descriptive statistics;
+- distributions;
+- Pearson/Spearman correlation;
+- group comparison;
+- effect sizes;
+- regression;
+- uncertainty;
+- validation and deterministic seeds.
 
-## Phase 5 — Research Studio
+## Phase 4 — Trajectories and Scenarios
 
-- [ ] Study entity;
-- [ ] hypothesis editor;
-- [ ] analysis pipeline;
-- [ ] reproducible runs;
-- [ ] model registry;
-- [ ] report builder;
-- [ ] PDF/HTML export.
+- longitudinal event model;
+- trajectory visualization;
+- conditional scenarios;
+- 5/10/15-year horizons;
+- sensitivity analysis;
+- explicit separation of historical observations and modeled scenarios.
 
-## Phase 6 — Advanced Modeling
+## Phase 5 — Research Workspace
 
-- [ ] Monte Carlo;
-- [ ] survival analysis;
-- [ ] time-series models;
-- [ ] mixed-effects models;
-- [ ] sensitivity analysis;
-- [ ] causal inference tooling where data/design permit.
+- study builder;
+- analysis workspace;
+- report builder;
+- reproducibility metadata;
+- export to PDF/HTML/Markdown.
 
-## Phase 7 — AI Research Assistant
+## Phase 6 — Research Assistant
 
-Future AI layer:
-
-- formulate candidate hypotheses;
-- suggest variables;
-- inspect data quality;
-- propose statistical methods;
-- execute approved analyses;
-- explain results;
-- identify limitations;
-- draft reports.
-
-AI must not silently modify datasets or claim causal conclusions unsupported by the study design.
+- optional Rita research assistant;
+- local-first context;
+- explicit user approval before external data transfer;
+- source/provenance-aware explanations;
+- no autonomous claims of guaranteed personal outcomes.
