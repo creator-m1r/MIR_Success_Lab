@@ -1,0 +1,4 @@
+module MIRAnalyticsBridge [system] {
+    header "MIRAnalyticsBridge.h"
+    export *
+}
